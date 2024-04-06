@@ -20,4 +20,12 @@ public class Functions {
     public static int division(int value01, int value02) {
         return value01 / value02;
     }
+
+    public static int multiplication(int... numbers) {
+        int result = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            result *= numbers[i];
+        }
+        return result;
+    }
 }
